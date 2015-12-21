@@ -1,0 +1,17 @@
+-form return -> transaksi *
+
+-diskon persen dan rupiah -> Penjualan -> koneksi ke database (ganti diskon per 1 unit) next "tambahkan" ..
+
+-piutang ada notifikasi yang tidak bayar atau jatuh tempo -> form baru/folder
+
+*-input barang suplier dan pembelian -> Transaksi -> pembelian*
+
+-notice stock akan habis low stock
+
+-harga 1, grosir. 2, eceran. 3, retail. (Sudah)
+
+-Report/Laporan Barang, Penjualan, Pembelian, struk penjualan
+
+-----------------------------------------------------------
+Ceklis Modul user
+interface
