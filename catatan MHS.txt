@@ -23,4 +23,4 @@ interface
 	$ git push
 	$ git status
 
-LAST git push : "users and profile"
+LAST git push : "tambah branch baru"
