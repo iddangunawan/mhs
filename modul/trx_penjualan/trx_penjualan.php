@@ -65,49 +65,57 @@ switch($act) {
     <form method="post" action="<?php echo $set->folder_modul.'/'.$modul;?>/aksi.php?<?php echo $set->folder_modul.'='.$modul.'&id='.@$ed['kode'].'&act='.$act.'&idp='.@$edprod['idDtlPen'].'&ttl='.@$_GET['ttl'];?>" name="form" id="form">
     <fieldset>
     <legend>Data Penjualan</legend>
-<table width="99%">
+    <table width="99%">
 		<tr align="left">
-		<td width="125"><b>Kode Penjualan</b></td>
-		<td width="3">:</td>
-		<td width="240" class="kode">
-		<?php if(!empty($kode)) {
-			echo $ed['kode'];?>
-			<input type="hidden" class="inp-form" name="kode" required="required" size="25" value="<?php echo $ed['kode'];?>"/>
-		<?php } else { echo $genCode;?>
-        	<input type="hidden" class="inp-form" name="kode" required="required" size="25" value="<?php echo $genCode;?>"/>
-        <?php }?>
-        </td>
-		<td width="120"></td>
-        <td rowspan="4"><div id="total"><br/> Rp <?php echo idr(@$ed['sttl']);?></div></td>
+    		<td width="125"><b>Kode Penjualan</b></td>
+    		<td width="3">:</td>
+    		<td width="240" class="kode">
+        		<?php if(!empty($kode)) {
+        			echo $ed['kode'];?>
+        			<input type="hidden" class="inp-form" name="kode" required="required" size="25" value="<?php echo $ed['kode'];?>"/>
+        		<?php } else { echo $genCode;?>
+                	<input type="hidden" class="inp-form" name="kode" required="required" size="25" value="<?php echo $genCode;?>"/>
+                <?php }?>
+            </td>
+    		<td width="120"></td>
+            <td rowspan="4"><div id="total"><br/> Rp <?php echo idr(@$ed['sttl']);?></div></td>
 		</tr>
         <tr align="left">
-		<td width="125"><b>Tanggal Transaksi</b></td>
-		<td width="3">:</td>
-		<td width="240">
-		<input type="text" name="tgl" class="tgl" size="18" <?php if(!empty($kode)) {
-			 echo 'value="'.$ed['tgl'].'"'. $disabled;
-			 } else { echo 'value="'.$getDate.'"';} ?>/>
-        </td>
-		<td width="89"></td>
+    		<td width="125"><b>Tanggal Transaksi</b></td>
+    		<td width="3">:</td>
+    		<td width="240">
+                <input type="text" name="tgl" class="tgl" size="18" 
+                <?php 
+                    if(!empty($kode)) {
+                        echo 'value="'.$ed['tgl'].'"'. $disabled;
+                    } else { 
+                        echo 'value="'.$getDate.'"';} 
+                ?> />
+            </td>
+    		<td width="89"></td>
 		</tr>
         <tr>
-		<td><b>Nama Pelanggan</b></td>
-        <td>:</td>
-		<td><input type="text" name="cust" onclick="clearInput(this)" size="30" <?php if(!empty($kode)) { 
-		echo "value='$ed[customer]' $disabled";
-		}?> /></td>
-		<td></td>
+    		<td><b>Nama Pelanggan</b></td>
+            <td>:</td>
+    		<td><input type="text" name="cust" onclick="clearInput(this)" size="30" required
+            <?php 
+                if(!empty($kode)) { 
+                    echo "value='$ed[customer]' $disabled";
+                }
+            ?> />
+            </td>
+    		<td></td>
 		</tr>
         <tr>
-		<td></td>
-        <td></td>
-		<td></td>
-		<td></td>
+    		<td></td>
+            <td></td>
+    		<td></td>
+    		<td></td>
 		</tr>
         <tr>
-		<td></td>
-        <td></td>
-		<td colspan="3"></td>
+    		<td></td>
+            <td></td>
+    		<td colspan="3"></td>
 		</tr>
 </table>
 </fieldset>
@@ -117,16 +125,20 @@ switch($act) {
     <tr>
       	<td><b>Cari Barang</b></td>
         <td>:</td>
-        <td><?php if (@$_GET['op'] == 'edprod') { 
-    	   echo "<input type=text name=brg required=required disabled=disabled value=$edprod[kdbarang] - $edprod[nama_barang] (Rp : idr($edprod[harga_jualstd]/>";
-    	} else {
-            echo '<input type="text" name="brg" required="required" placeholder="Nama Barang" id="brg" onclick="clearInput(this)"/>';
-    	}; ?></td>
+        <td>
+        <?php 
+            if (@$_GET['op'] == 'edprod') { 
+                echo "<input type=text name=brg required=required disabled=disabled value=$edprod[kdbarang] - $edprod[nama_barang] (Rp : idr($edprod[harga_jualstd]/>";
+    	    } else {
+                echo '<input type="text" name="brg" required="required" placeholder="Nama Barang" id="brg" onclick="clearInput(this)"/>';
+    	   }; ?>
+        </td>
     </tr>
     <tr>
         <td><b>Harga</b></td>
         <td>:</td>
-        <td><input type="text" name="harga_disc" id="harga_disc" disabled="disabled" onclick="clearInput(this)" placeholder="Harga" value="<?php echo @$edprod['harga_jualreal'];?>"/></td>
+        <!-- <td><input type="text" name="harga_disc" id="harga_disc" disabled="disabled" onclick="clearInput(this)" placeholder="Harga" value="<?php echo @$edprod['harga_jualreal'];?>"/></td> -->
+        <td><input type="text" name="harga" id="harga" readonly="readonly" placeholder="Harga" value="<?php echo @$edprod['harga_jualreal'];?>"/></td>
     </tr>
     <tr>
         <td><b>Diskon</b></td>
@@ -141,19 +153,19 @@ switch($act) {
     <tr class="persen box">
         <td></td>
         <td></td>
-        <td><input type="text" name="disc_persen" id="disc_persen" placeholder="Disc %" onclick="clearInput(this)" onkeyup="hitTotaldiscpersen(getElementById('harga_disc').value,this.value);"/> %</td>
+        <td><input type="text" name="disc_persen" id="disc_persen" placeholder="Disc %" onclick="clearInput(this)" onkeyup="hitTotaldiscpersen(getElementById('harga').value,this.value);"/> %</td>
     </tr>
     <tr class="rp box">
         <td></td>
         <td></td>
-        <td><input type="text" name="disc_rp" id="disc_rp" placeholder="Disc Rp. " onclick="clearInput(this)" onkeyup="hitTotaldiscrp(getElementById('harga_disc').value,this.value);"/> ,-</td>
+        <td><input type="text" name="disc_rp" id="disc_rp" placeholder="Disc Rp. " onclick="clearInput(this)" onkeyup="hitTotaldiscrp(getElementById('harga').value,this.value);"/> ,-</td>
     </tr>            
     </tr>
     <tr>
         <td><b>Harga Diskon</b></td>
         <td>:</td>
-        <td><input type="text" name="disc_unit" id="disc_unit" disabled="disabled"></td>
         <!-- <td><input type="text" name="jumlah" id="jum" disabled="disabled" placeholder="Total" value="<?php echo @$edprod['th_jual'];?>"/></td> -->
+        <td><input type="text" name="disc_unit" id="disc_unit" readonly="readonly"></td>
     </tr>
     <tr>
         <td><b>Qty</b></td>
@@ -163,7 +175,7 @@ switch($act) {
     <tr>
         <td><b>Total</b></td>
         <td>:</td>
-        <td><input type="text" name="jumlah" id="jum" disabled="disabled" placeholder="Total"/></td>
+        <td><input type="text" name="jumlah" id="jum" readonly="readonly" placeholder="Total"/></td>
     </tr>
     <tr>
         <td></td>
@@ -271,14 +283,14 @@ break;
         });
     }).change();
 
-    function hitTotaldiscpersen(harga_disc,disc_persen) {
-        var disc = (harga_disc/100)*disc_persen;
-        var hasil = eval(harga_disc) - eval(disc);
+    function hitTotaldiscpersen(harga,disc_persen) {
+        var disc = (harga/100)*disc_persen;
+        var hasil = eval(harga) - eval(disc);
         $("#disc_unit").val(hasil);
     }
 
-    function hitTotaldiscrp(harga_disc,disc_rp){
-        var hasil = eval(harga_disc) - eval(disc_rp);
+    function hitTotaldiscrp(harga,disc_rp){
+        var hasil = eval(harga) - eval(disc_rp);
         $("#disc_unit").val(hasil);
     }
 

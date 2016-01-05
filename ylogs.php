@@ -7384,3 +7384,262 @@ From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
 Url     	  : localhost/mhs/modul=trx_penjualan&act=new&id=INV-2015121100000001&ttl=882000.00<br/>
 UserAgent     :  (localhost)<br/>
 ============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2015-12-31 / 06:08:01<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/index.php<br/>
+Url     	  : localhost/mhs/modul=system&sub=menu<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2015-12-31 / 06:08:21<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/index.php<br/>
+Url     	  : localhost/mhs/modul=system&sub=menu<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2015-12-31 / 06:08:49<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=system&sub=menu<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2015-12-31 / 06:09:13<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2015-12-31 / 06:09:22<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new&id=INV-2015121700000004&ttl=155000.00<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2015-12-31 / 06:09:32<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan&act=new&id=INV-2015121700000004&ttl=155000.00<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=delprod&id=48&kdp=INV-2015121700000004<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2015-12-31 / 06:09:33<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : <br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new&id=INV-2015121700000004<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2015-12-31 / 06:09:37<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan&act=new&id=INV-2015121700000004<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=delprod&id=49&kdp=INV-2015121700000004<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2015-12-31 / 06:09:38<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : <br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new&id=INV-2015121700000004<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2015-12-31 / 06:10:06<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan&act=new&id=INV-2015121700000004<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new&id=INV-2015121700000004<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2015-12-31 / 06:34:01<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2015-12-31 / 06:34:05<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 19:45:34<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/index.php<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 19:45:36<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 19:49:38<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 19:49:44<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 19:49:48<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/index.php<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 19:49:51<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:31:25<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:31:48<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:32:31<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:37:30<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:38:31<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:42:21<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:42:51<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:44:27<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:45:28<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:47:22<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:47:34<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:48:06<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:48:35<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:49:00<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:51:37<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:54:38<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:58:07<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 20:59:50<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-04 / 21:01:03<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>

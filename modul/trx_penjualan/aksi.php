@@ -4,20 +4,42 @@ session_start();
 	include '../../config/function.php';
 	include '../../config/config.php';
 if (NULL !== cekAkses("$modul","$_SESSION[ylevel]","$act")) {
-	$tgl = anti($_POST['tgl']);
 	$kd = anti($_POST['kode']);
+	$tgl = anti($_POST['tgl']);
 	$cust = anti($_POST['cust']);
-	$diskon = abs((int)($_POST['diskon']));
-	$ket = anti($_POST['ket']);
 	$b = explode(' - ',$_POST['brg']);
 	$brg = $b[0];
-	$qty = abs((int)($_POST['qty']));
 	$harga = abs((int)($_POST['harga'])); //harga asli dari data barang
-	$harga_disc = abs((int)($_POST['harga_disc'])); //harga real ketika transaksi
-	$item_disc = $harga - $harga_disc;
-	//item_disc = nominal pemberian diskon/potongan (auto). Jika harga real ketika transaksi berbeda dengan harga dari data barang
-	$ttl = $harga_disc * $qty;
-	//total harga real transaksi * dengan qty
+	$select_diskon = anti($_POST['select_diskon']);
+	$disc_persen = abs((int)($_POST['disc_persen']));
+	$disc_rp = abs((int)($_POST['disc_rp']));
+	$disc_unit = abs((int)($_POST['disc_unit']));
+	$qty = abs((int)($_POST['qty']));
+	$jumlah = abs((int)($_POST['jumlah']));
+
+	// $diskon = abs((int)($_POST['diskon']));
+	// $ket = anti($_POST['ket']);		
+	// $item_disc = $harga - $harga_disc;
+	// item_disc = nominal pemberian diskon/potongan (auto). Jika harga real ketika transaksi berbeda dengan harga dari data barang
+	// $ttl = $harga_disc * $qty;
+	// total harga real transaksi * dengan qty
+
+	echo $kd.'<br>';
+	echo $tgl.'<br>';
+	echo $cust.'<br>';
+	echo $brg.'<br>';
+	echo $harga.'<br>';
+	echo $select_diskon.'<br>';
+	echo $disc_persen.'<br>';
+	echo $disc_rp.'<br>';
+	echo $disc_unit.'<br>';
+	echo $qty.'<br>';
+	echo $jumlah.'<br>';
+	echo '<hr>';	
+	
+	// echo $ket.'<br>';
+	// echo $item_disc.'<br>';
+	// echo $ttl.'<br>';
 	
 switch($_POST['tipe']) {
 	case 'save':
