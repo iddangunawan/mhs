@@ -1,6 +1,6 @@
 -form return -> transaksi *
 
--diskon persen dan rupiah -> Penjualan -> koneksi ke database (ganti diskon per 1 unit) next "tambahkan" ..
+-diskon persen dan rupiah -> Penjualan -> koneksi ke database (ganti diskon per 1 unit) next "tambahkan masuk ke database" ..
 
 -piutang ada notifikasi yang tidak bayar atau jatuh tempo -> form baru/folder
 

@@ -7643,3 +7643,24 @@ From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
 Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
 UserAgent     :  (localhost)<br/>
 ============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-05 / 10:46:54<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/index.php<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-05 / 10:46:56<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
+User    	  : owner<br/>
+Time    	  : 2016-01-05 / 10:50:07<br/>
+IP     		  : 127.0.0.1<br/>
+From   		  : http://localhost/mhs/modul=trx_penjualan<br/>
+Url     	  : localhost/mhs/modul=trx_penjualan&act=new<br/>
+UserAgent     :  (localhost)<br/>
+============================================================================================<br/>
