@@ -15,3 +15,12 @@
 -----------------------------------------------------------
 Ceklis Modul user
 interface
+
+* SESUDAH NGODING USAHAKAN LANGSUNG PUSH KE GIT-REPOSITORY(UPLOAD KE GITHUB)
+	$ git status
+	$ git add .
+	$ git commit -m "penamaan commit" 
+	$ git push
+	$ git status
+
+LAST git push : "users and profile"
