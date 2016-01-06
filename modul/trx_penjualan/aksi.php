@@ -16,6 +16,7 @@ if (NULL !== cekAkses("$modul","$_SESSION[ylevel]","$act")) {
 	$disc_unit = abs((int)($_POST['disc_unit']));
 	$qty = abs((int)($_POST['qty']));
 	$jumlah = abs((int)($_POST['jumlah']));
+	$tipe = $_POST['tipe'];
 
 	// $diskon = abs((int)($_POST['diskon']));
 	// $ket = anti($_POST['ket']);		
@@ -26,6 +27,7 @@ if (NULL !== cekAkses("$modul","$_SESSION[ylevel]","$act")) {
 
 	echo $kd.'<br>';
 	echo $tgl.'<br>';
+	echo date('Y-m-d H:i:s').'<br>';
 	echo $cust.'<br>';
 	echo $brg.'<br>';
 	echo $harga.'<br>';
@@ -41,28 +43,31 @@ if (NULL !== cekAkses("$modul","$_SESSION[ylevel]","$act")) {
 	// echo $item_disc.'<br>';
 	// echo $ttl.'<br>';
 	
-switch($_POST['tipe']) {
-	case 'save':
-	$q = $mysqli->query("CALL ypos_trxPenjualanDtl('$kd','$cust','$tgl','$brg',$harga_disc,$qty,'$_SESSION[yuser]',@error)")->fetch_object();
-	$errno = $q->error;
-	if (!empty($errno)) {
-		header("location:../../$set->folder_modul=$modul&act=new&id=$kd&msg=error&errno=$errno");
-	} else {
-		header("location:../../$set->folder_modul=$modul&act=new&id=$kd");
-	} 
-	break;
-	case 'edProd':
-	$idp = abs((int)($_GET['idp'])); //untuk get id penjualan produk
-		
-	$ed = $mysqli->query("CALL ypos_trxPenjualanDtl_update($idp,'$kode',$qty,$harga_disc,$ttl,@error)")->fetch_object();
-	//echo $idp .'-'.$kode.'-'.$qty.'-'.$harga_disc.'-'.$ttl;
-	$errno = $ed->error;
-	if (!empty($errno)) {
-		header("location:../../$set->folder_modul=$modul&act=new&id=$kd&msg=error&errno=$errno");
-	} else {
-		header("location:../../$set->folder_modul=$modul&act=new&id=$kode");
-	} 
-	break;
+	switch($tipe) {
+		case 'save':
+			echo $tipe.'<br>';
+			// yposSQL('ADD','ypos_penjualan',"kd_penjualan='$kd', customer='$cust', harga_beli='$hb', harga_jual='$hj', stok=$stok, lokasi='$lok', gambar='$pic', idkat=$cat, ids=$_SESSION[yids]");
+			// yposSQL('EDIT','ypos_barang',"nama_barang='$nama', harga_beli='$hb', harga_jual='$hj', stok=$stok, lokasi='$lok', gambar='$pic', idkat=$cat, ids=$_SESSION[yids]","kdbarang='$kd'");
+			// $q = $mysqli->query("CALL ypos_trxPenjualanDtl('$kd', '$cust', '$tgl', '$brg', $harga, $qty, '$_SESSION[yuser]', @error)")->fetch_object();
+			// $errno = $q->error;
+			// if (!empty($errno)) {
+			// 	header("location:../../$set->folder_modul=$modul&act=new&id=$kd&msg=error&errno=$errno");
+			// } else {
+			// 	header("location:../../$set->folder_modul=$modul&act=new&id=$kd");
+			// }
+		break;
+		case 'edProd':
+			echo $tipe.'<br>';
+			// $idp = abs((int)($_GET['idp'])); //untuk get id penjualan produk			
+			// $ed = $mysqli->query("CALL ypos_trxPenjualanDtl_update($idp,'$kode',$qty,$harga_disc,$ttl,@error)")->fetch_object();
+			// //echo $idp .'-'.$kode.'-'.$qty.'-'.$harga_disc.'-'.$ttl;
+			// $errno = $ed->error;
+			// if (!empty($errno)) {
+			// 	header("location:../../$set->folder_modul=$modul&act=new&id=$kd&msg=error&errno=$errno");
+			// } else {
+			// 	header("location:../../$set->folder_modul=$modul&act=new&id=$kode");
+			// }
+		break;
 	}
 } else {
 	header("location:../../$set->folder_modul=$modul&msg=error&errno=1045");

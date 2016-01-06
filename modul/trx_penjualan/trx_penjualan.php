@@ -70,12 +70,11 @@ switch($act) {
     		<td width="125"><b>Kode Penjualan</b></td>
     		<td width="3">:</td>
     		<td width="240" class="kode">
-        		<?php if(!empty($kode)) {
-        			echo $ed['kode'];?>
-        			<input type="hidden" class="inp-form" name="kode" required="required" size="25" value="<?php echo $ed['kode'];?>"/>
-        		<?php } else { echo $genCode;?>
-                	<input type="hidden" class="inp-form" name="kode" required="required" size="25" value="<?php echo $genCode;?>"/>
-                <?php }?>
+        		<?php if(!empty($kode)) { ?>
+        			<input type="text" class="inp-form" name="kode" required="required" readonly="" size="30" value="<?php echo $ed['kode'];?>"/>
+        		<?php } else { ?>
+                	<input type="text" class="inp-form" name="kode" required="required" readonly="" size="30" value="<?php echo $genCode;?>"/>
+                <?php } ?>
             </td>
     		<td width="120"></td>
             <td rowspan="4"><div id="total"><br/> Rp <?php echo idr(@$ed['sttl']);?></div></td>
@@ -83,7 +82,14 @@ switch($act) {
         <tr align="left">
     		<td width="125"><b>Tanggal Transaksi</b></td>
     		<td width="3">:</td>
-    		<td width="240">
+            <td width="240">
+                <?php if(!empty($kode)) { ?>
+                    <input type="text" name="tgl" required="required" readonly="" size="30" value="<?php echo $ed['tgl'];?>"/>
+                <?php } else { ?>
+                    <input type="text" class="tgl" name="tgl" required="required" size="30" value="<?php echo $getDate;?>"/>
+                <?php } ?>
+            </td>
+    		<!-- <td width="240">
                 <input type="text" name="tgl" class="tgl" size="18" 
                 <?php 
                     if(!empty($kode)) {
@@ -91,19 +97,26 @@ switch($act) {
                     } else { 
                         echo 'value="'.$getDate.'"';} 
                 ?> />
-            </td>
+            </td> -->
     		<td width="89"></td>
 		</tr>
         <tr>
     		<td><b>Nama Pelanggan</b></td>
             <td>:</td>
-    		<td><input type="text" name="cust" onclick="clearInput(this)" size="30" required
+            <td width="240">
+                <?php if(!empty($kode)) { ?>
+                    <input type="text" name="cust" required="required" readonly="" size="30" value="<?php echo $ed['customer'];?>"/>
+                <?php } else { ?>
+                    <input type="text" name="cust" required="required" size="30" value=""/>
+                <?php } ?>
+            </td>
+    		<!-- <td><input type="text" name="cust" onclick="clearInput(this)" size="30" required
             <?php 
                 if(!empty($kode)) { 
                     echo "value='$ed[customer]' $disabled";
                 }
             ?> />
-            </td>
+            </td> -->
     		<td></td>
 		</tr>
         <tr>
